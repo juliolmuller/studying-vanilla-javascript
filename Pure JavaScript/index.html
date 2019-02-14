@@ -1,61 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>
-      jSystem - User Manager
+      CRUD - Vanilla JavaScript - User Manager
     </title>
     <link type="icon" href="./favicon.png" rel="icon">
-    <link type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link type="text/css" href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link type="text/css" href="./bower_components/Ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link type="text/css" href="./dist/css/AdminLTE.min.css" rel="stylesheet">
-    <link type="text/css" href="./dist/css/skins/skin-blue.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="./dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="./dist/css/skins/skin-blue.min.css">
   </head>
-
   <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
 
-      <!-- Main Header -->
+<!-- Application Header -->
       <header class="main-header">
-        <!-- Logo -->
-        <a href="index2.html" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><span style="font-weight: bold; color: #000000">j</span>System</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><span style="font-weight: bold; color: #000000">j</span>System</span>
+        <a href="/" class="logo">
+          <span class="logo-mini">CRUD <span style="font-weight: bold; color: #000000">JavaScript</span></span>
+          <span class="logo-lg">CRUD <span style="font-weight: bold; color: #000000">JavaScript</span></span>
         </a>
+        <!-- /Logo -->
 
-        <!-- Header Navbar -->
         <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
+          <!-- Hamburguer Menu Button -->
           <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
             <span class="sr-only">Toggle navigation</span>
           </a>
-          <!-- Navbar Right Menu -->
+
+          <!-- Top User Menu -->
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <!-- User Account Menu -->
               <li class="dropdown user user-menu">
-                <!-- Menu Toggle Button -->
+                
+                <!-- User Image -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <!-- The user image in the navbar-->
-                  <img src="./dist/img/avatar5.png" class="user-image" alt="User Image">
-                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <img src="./dist/img/avatar04.png" class="user-image" alt="User Image">
                   <span class="hidden-xs">Julio Muller</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <!-- The user image in the menu -->
-                  <li class="user-header">
-                    <img src="./dist/img/avatar5.png" class="img-circle" alt="User Image">
 
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li class="user-header">
+                    <img src="./dist/img/avatar04.png" class="img-circle" alt="User Image">
                     <p>
                       Julio Muller - Web Developer
                       <small>Member since Jan, 2019</small>
                     </p>
                   </li>
+
                   <!-- Menu Body -->
                   <li class="user-body">
                     <div class="row">
@@ -69,8 +65,8 @@
                         <a href="#">Friends</a>
                       </div>
                     </div>
-                    <!-- /.row -->
                   </li>
+
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
@@ -87,40 +83,37 @@
         </nav>
       </header>
 
-      <!-- Left side column. contains the logo and sidebar -->
+<!-- Left Side Navigation Menu -->
       <aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
-          <!-- Sidebar user panel (optional) -->
+
+          <!-- Current User Overview -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="./dist/img/avatar5.png" class="img-circle" alt="User Image">
+              <img src="./dist/img/avatar04.png" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
               <p>Julio Muller</p>
-              <!-- Status -->
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
 
-          <!-- Sidebar Menu -->
+          <!-- Menu -->
           <ul class="sidebar-menu" data-widget="tree">
             <li class="header">MENU</li>
-            <!-- Optionally, you can add icons to the links -->
             <li class="active"><a href="#"><i class="fa fa-users"></i> <span>Users</span></a></li>
           </ul>
-          <!-- /.sidebar-menu -->
         </section>
-        <!-- /.sidebar -->
       </aside>
 
-      <!-- Content Wrapper. Contains page content -->
-      <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
+<!-- Main COntent Section -->
+      <main class="content-wrapper">
+
+        <!-- Section Header -->
         <section class="content-header">
           <h1>
-            Users
-            <small>System User Management</small>
+            User Manager
+            <small>version 1.0.0</small>
           </h1>
           <ol class="breadcrumb">
             <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
@@ -128,15 +121,16 @@
           </ol>
         </section>
 
-        <!-- Main content -->
+        <!-- Section Content -->
         <section class="content container-fluid">
           <div class="row">
+
+            <!-- List of Users -->
             <div class="col-md-8">
               <div class="box">
                 <div class="box-header">
                   <h3 class="box-title">Users List</h3>
                 </div>
-                <!-- /.box-header -->
                 <div class="box-body no-padding">
                   <table class="table table-striped" id="users-table">
                     <thead>
@@ -153,16 +147,15 @@
                     </tbody>
                   </table>
                 </div>
-                <!-- /.box-body -->
               </div>
             </div>
+
+            <!-- Right Side Panel -->
             <div class="col-md-4">
 
-<!-- Blocos com status de quantidade de usuários -->
+              <!-- Users Counters Blocks -->
               <div class="row">
-                <!-- ./col -->
                 <div class="col-xs-6">
-                  <!-- small box -->
                   <div class="small-box bg-green">
                     <div class="inner">
                       <h3 id="status-all-users">0</h3>
@@ -173,9 +166,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- ./col -->
                 <div class="col-xs-6">
-                  <!-- small box -->
                   <div class="small-box bg-yellow">
                     <div class="inner">
                       <h3 id="status-admins">0</h3>
@@ -186,15 +177,17 @@
                     </div>
                   </div>
                 </div>
-                <!-- ./col -->
               </div>
 
-<!-- Formulário de criação de usuário -->
+              <!-- Create New Users Form -->
               <div class="box box-success" style="display: block;" id="box-user-create">
+
+                <!-- Form Header -->
                 <div class="box-header with-border">
                   <h3 class="box-title">New User</h3>
                 </div>
-                <!-- /box-header -->
+
+                <!-- Form Inputs -->
                 <form role="form" id="form-user-create">
                   <div class="box-body">
                     <div class="form-group">
@@ -486,19 +479,23 @@
                       </label>
                     </div>
                   </div>
-                  <!-- /.box-body -->          
+
+                  <!-- Form Buttons -->
                   <div class="box-footer">
                     <button type="submit" class="btn btn-success">Save</button>
                   </div>
                 </form>
               </div>
 
-<!-- Formulário de edião de usuário -->
+              <!-- Update Existing Users Form -->
               <div class="box box-primary" style="display: none;" id="box-user-edit">
+
+                <!-- Form Header -->
                 <div class="box-header with-border">
                   <h3 class="box-title">Change User</h3>
                 </div>
-                <!-- /box-header -->
+
+                <!-- Form Inputs -->
                 <form role="form" id="form-user-update">
                   <div class="box-body">
                     <div class="form-group">
@@ -791,37 +788,34 @@
                     </div>
                     <input type="hidden" name="register">
                   </div>
-                  <!-- /.box-body -->          
+
+                  <!-- Form Buttons -->
                   <div class="box-footer">
                     <button type="submit" class="btn btn-primary">Save</button>
                     <button type="button" class="btn btn-default btn-form-cancel">Cancel</button>
                   </div>
                 </form>
               </div>
-
             </div>
           </div>
         </section>
-        <!-- /.content -->
-      </div>
-      <!-- /.content-wrapper -->
+      </main>
 
-      <!-- Main Footer -->
+<!-- Application Footer -->
       <footer class="main-footer">
-        <!-- To the right -->
         <div class="pull-right hidden-xs">
           <a target="_blank" href="https://www.linkedin.com/in/juliolmuller/">Julio Muller</a>
         </div>
-        <!-- Default to the left -->
         All rights reserved &copy; 2019
       </footer>
+    </div>
 
-    </div>
-    </div>
-    <script type="text/javascript" src="./utils/Utils.js"></script>
-    <script type="text/javascript" src="./model/User.js"></script>
-    <script type="text/javascript" src="./model/LocalStorage.js"></script>
-    <script type="text/javascript" src="./controller/UserController.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+<!-- Personal Scripts -->
+    <script type="text/javascript" src="./app/utils/Utils.js"></script>
+    <script type="text/javascript" src="./app/model/Storage.js"></script>
+    <script type="text/javascript" src="./app/model/constants.js"></script>
+    <script type="text/javascript" src="./app/model/User.js"></script>
+    <script type="text/javascript" src="./app/controller/UserController.js"></script>
+    <script type="text/javascript" src="./app/index.js"></script>
   </body>
 </html>
