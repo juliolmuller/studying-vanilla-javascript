@@ -1,12 +1,12 @@
 
 # Simple JavaScript CRUD Application
 
-- **JavaScript developed by:** [Julio L. Muller](https://www.jjsolutions.net/)
+- **JavaScript developed by:** [Julio L. Muller](https://github.com/juliolmuller)
 - **HTML & CSS delivered by:** [Hcode Treinamentos](https://www.hcode.com.br)
 - **Released on:** Jan 28, 2019
-- **Updated on:** Feb 19, 2019
-- **Latest version:** 1.1.0
-- **License:** *FREE*
+- **Updated on:** Sep 4, 2019
+- **Latest version:** 1.1.1
+- **License:** *MIT*
 
 ## Overview
 
@@ -16,7 +16,7 @@ Application developed to demonstrate a functional CRUD application (create, read
 
 ## Run Application
 
-Take a look at this application running through [this link](http://crud.js.jjsolutions.net/).
+Take a look at this application running through [this link](https://juliolmuller.github.io/crud-javascript).
 
 ## Resources
 
