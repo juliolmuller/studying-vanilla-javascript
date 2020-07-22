@@ -1,36 +1,36 @@
 {
   "name": "crud-javascript",
-  "author": "Julio L. Muller",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Simple CRUD application with vanilla JavaScript.",
+  "author": "Julio L. Muller",
+  "license": "MIT",
   "keywords": [
     "julio muller",
-    "crud",
-    "javascript"
+    "javascript",
+    "crud"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/juliolmuller/crud-javascript"
   },
-  "license": "MIT",
   "scripts": {
     "build": "gulp --production"
   },
   "devDependencies": {
-    "@babel/core": "7.*",
-    "@babel/preset-env": "7.*",
-    "del": "5.*",
-    "gulp": "4.*",
-    "gulp-babel": "8.*",
-    "gulp-clean-css": "4.*",
-    "gulp-concat": "2.*",
-    "gulp-htmlmin": "5.*",
-    "gulp-uglify": "3.*"
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
     "admin-lte": "~2.4.18",
     "bootstrap": "^3.4.1",
-    "font-awesome": "4.*",
-    "ionicons": "2.*"
+    "font-awesome": "^4.7.0",
+    "ionicons": "^2.0.1"
   }
 }
