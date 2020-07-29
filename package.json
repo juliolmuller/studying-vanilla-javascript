@@ -21,7 +21,8 @@
   "devDependencies": {
     "@lacussoft/eslint-config-standard": "^1.0.4",
     "eslint": "^6.8.0",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
   },
   "dependencies": {
     "admin-lte": "~3.0.5"
