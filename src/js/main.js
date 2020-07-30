@@ -2,6 +2,7 @@
 window.jQuery = window.$ = require('jquery')
 require('bootstrap')
 require('admin-lte')
-// import './controllers/UserController'
 
-// new UserController('users-table', 'create-user-form', 'edit-user-form')
+const UserController = require('./controllers/UserController')
+
+new UserController('#users-table', '#create-user-form', '#edit-user-form')
