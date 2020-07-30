@@ -4,8 +4,8 @@
 - **JavaScript developed by:** [Julio L. Muller](https://github.com/juliolmuller)
 - **HTML & CSS delivered by:** [Hcode Treinamentos](https://www.hcode.com.br)
 - **Released on:** Jan 28, 2019
-- **Updated on:** Jul 22, 2019
-- **Latest version:** 1.1.3
+- **Updated on:** Jul 29, 2020
+- **Latest version:** 1.2.0
 - **License:** *MIT*
 
 ## Overview
@@ -17,7 +17,3 @@ Application developed to demonstrate a functional CRUD application (create, read
 ## Run Application
 
 Take a look at this application running through [this link](https://juliolmuller.github.io/crud-javascript).
-
-## Resources
-
-Yet to come...
