@@ -1,11 +1,9 @@
 {
   "name": "crud-javascript",
   "version": "1.2.2",
+  "private": true,
   "license": "MIT",
-  "author": {
-    "name": "Julio L. M",
-    "url": "https://juliolmuller.github.io/"
-  },
+  "author": "Julio L. Muller",
   "scripts": {
     "start": "parcel src/index.html -d docs/",
     "serve": "parcel serve src/index.html -d docs/",
@@ -17,21 +15,27 @@
     "admin-lte": "~3.0.5"
   },
   "devDependencies": {
-    "@lacussoft/eslint-config-standard": "^1.0.9",
-    "eslint": "^7.12.0",
+    "@lacussoft/eslint-config": "^1.0.1",
+    "eslint": "^7.16.0",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.27.0"
+    "sass": "^1.30.0"
   },
   "eslintConfig": {
     "root": true,
     "env": {
-      "browser": true,
-      "node": true
+      "es6": true,
+      "browser": true
     },
-    "extends": "@lacussoft/standard",
+    "extends": [
+      "@lacussoft"
+    ],
+    "ignorePatterns": [
+      "docs/",
+      "public/"
+    ],
     "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2018
+      "ecmaVersion": 2018,
+      "sourceType": "module"
     },
     "rules": {
       "no-underscore-dangle": "off"
