@@ -1,6 +1,6 @@
 {
   "name": "crud-javascript",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "license": "MIT",
   "author": "Julio L. Muller",
@@ -16,9 +16,9 @@
   },
   "devDependencies": {
     "@lacussoft/eslint-config": "^1.0.1",
-    "eslint": "^7.16.0",
+    "eslint": "^7.17.0",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.30.0"
+    "sass": "^1.32.2"
   },
   "eslintConfig": {
     "root": true,
